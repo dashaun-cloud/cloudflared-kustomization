@@ -8,7 +8,6 @@ For use with [FluxCD](https://fluxcd.io) to deploy [dashaun/cloudflared-arm64-do
 flux create source git cloudflared \
   --url=https://github.com/dashaun-cloud/cloudflared-kustomization \
   --branch=main \
-  --interval=1m \
   --export > ./clusters/cluster00/cloudflared-source.yaml
 ```
 
@@ -20,6 +19,5 @@ flux create kustomization cloudflared \
   --source=cloudflared \
   --path="./kustomize" \
   --prune=true \
-  --interval=3m \
   --export > ./clusters/cluster00/cloudflared-kustomization.yaml
 ```
