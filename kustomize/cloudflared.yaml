@@ -63,4 +63,8 @@ data:
         service: http://kourier-internal.knative-serving.svc.cluster.local
         originRequest:
           httpHostHeader: spring-cloud-gateway.default.10.99.1.102.sslip.io
+      - hostname: 'github.dashaun.dev'
+        service: http://kourier-internal.knative-serving.svc.cluster.local
+        originRequest:
+          httpHostHeader: githubsourcesample-g2h9w.default.10.99.1.102.sslip.io
       - service: http_status:404
