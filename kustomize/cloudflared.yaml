@@ -59,7 +59,7 @@ data:
     originRequest:
       noTLSVerify: true
     ingress:
-      - hostname: 'homelab.dashaun.dev'
+      - hostname: 'spring.dashaun.dev'
         service: http://kourier-internal.knative-serving.svc.cluster.local
         originRequest:
           httpHostHeader: spring-cloud-gateway.default.10.99.1.102.sslip.io
